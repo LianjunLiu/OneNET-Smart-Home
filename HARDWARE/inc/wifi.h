@@ -10,11 +10,11 @@
 #define WiFi_RX_BUF       Usart2_RxBuff       //´®¿Ú2¿ØÖÆ WiFi
 #define WiFi_RXBUFF_SIZE  USART2_RXBUFF_SIZE  //´®¿Ú2¿ØÖÆ WiFi
 
-//#define SSID   "HONOR_30"                    //WIFI SSID
-//#define PASS   "12345678"                    //WIFI ÃÜÂë
+#define SSID   "HONOR 30"                    //WIFI SSID
+#define PASS   "12345678"                    //WIFI ÃÜÂë
 
-#define SSID   "TPLINK-17-AE"                  //WIFI SSID
-#define PASS   "13785635203"                   //WIFI ÃÜÂë
+//#define SSID   "TPLINK-17-AE"                  //WIFI SSID
+//#define PASS   "13785635203"                   //WIFI ÃÜÂë
 
 
 extern int ServerPort;

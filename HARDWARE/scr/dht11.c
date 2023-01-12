@@ -63,7 +63,7 @@ char DHT11_Read_Bit(void)
 	}
 	timeout = 0;                               //清零timeout	
 	while((DHT11_DQ_IN == 0) && (timeout < 60))//接下来，DHT11会拉低IO，根据拉低的时间判断是0或1，我们等60us
-	{  
+	{
 		timeout++;                               //超时变量+1
 		DelayUs(1);                              //延时1us
 	}
@@ -94,7 +94,7 @@ char DHT11_Read_Byte(void)
 
 //读取一次数据温湿度
 char DHT11_Read_Data(char *temp, char *humi)    
-{        
+{
  	char buf[5];                                         //一次完整的数据有5个字节，定义一个缓冲区
 	char i;                                              //定义一个变量用于for循环  
 	DHT11_Rst();                                         //复位DHT11	

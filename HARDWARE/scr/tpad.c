@@ -49,10 +49,10 @@ u8 TPAD_Init(u8 psc)
 	u8 j,i;
 	TIM5_CH2_Cap_Init(TPAD_ARR_MAX_VAL,psc-1);//以1Mhz的频率计数 
 	for(i=0;i<10;i++)//连续读取10次
-	{				 
+	{
 		buf[i]=TPAD_Get_Val();
 		DelayMs(10);	    
-	}				    
+	}
 	for(i=0;i<9;i++)//排序
 	{
 		for(j=i+1;j<10;j++)
@@ -101,7 +101,7 @@ void TPAD_Reset(void)
 //得到定时器捕获值
 //如果超时,则直接返回定时器的计数值.
 u16 TPAD_Get_Val(void)
-{				   
+{
 	TPAD_Reset();
 	while(TIM_GetFlagStatus(TIM5, TIM_IT_CC2) == RESET)//等待捕获上升沿
 	{
@@ -148,4 +148,4 @@ u8 TPAD_Scan(u8 mode)
 	} 
 	if(keyen)keyen--;		   							   		     	    					   
 	return res;
-}	
+}

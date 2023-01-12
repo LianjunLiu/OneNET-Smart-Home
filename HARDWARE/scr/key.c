@@ -26,6 +26,7 @@ void KEY_Init(void)
 	GPIO_Init(GPIOA, &GPIO_InitStructure);//初始化GPIOA.0
 
 }
+
 //按键扫描函数
 //返回按键值
 //mode:0,不支持连续按;1,支持连续按;
