@@ -13,10 +13,6 @@
 #define SSID   "HONOR 30"                    //WIFI SSID
 #define PASS   "12345678"                    //WIFI 密码
 
-//#define SSID   "TPLINK-17-AE"                  //WIFI SSID
-//#define PASS   "13785635203"                   //WIFI 密码
-
-
 extern int ServerPort;
 extern char ServerIP[128];                   //存放服务器IP或是域名
 
